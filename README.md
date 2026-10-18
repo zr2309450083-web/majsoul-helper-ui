@@ -67,7 +67,7 @@ UI 会显示每个后切选项的 `断幺 / 役牌 / 三色…` 或红色 `无�
 1. 解压到一个**可写**文件夹。
 2. 关闭原版 `mahjong-helper.exe`。
 3. 双击 `start-ui.vbs`。
-4. 打开雀魂开始一局。
+4. 接受数据参考雀魂max项目https://github.com/Avenshy/MajsoulMax
 
 ### 方式 B：从源码构建
 
