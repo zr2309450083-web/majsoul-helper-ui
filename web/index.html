@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>雀魂助手</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="brand"><span id="conn" class="dot"></span><span>mahjong-helper</span></div>
+      <div id="round" class="round">等待数据</div>
+    </header>
+
+    <section id="call" class="call hidden">
+      <div class="call-head">
+        <span id="call-title" class="call-title"></span>
+        <span id="call-verdict" class="call-verdict"></span>
+      </div>
+      <div id="call-reason" class="call-reason"></div>
+      <div id="call-yaku" class="call-yaku"></div>
+      <div id="call-pass" class="call-pass"></div>
+      <div id="call-options" class="call-options"></div>
+    </section>
+
+    <section id="hero" class="hero" aria-live="polite">
+      <div id="hero-label" class="hero-label">推荐打哪张牌</div>
+      <div id="hero-tile" class="hero-tile">--</div>
+      <div id="hero-meta" class="hero-meta"></div>
+      <div id="hero-badge" class="hero-badge"></div>
+    </section>
+
+    <section id="candidates" class="candidates"></section>
+
+    <section id="defense" class="defense hidden"></section>
+
+    <section class="hand-section">
+      <div class="section-label">手牌</div>
+      <div id="hand" class="hand"></div>
+      <div id="melds" class="melds"></div>
+      <div id="dora" class="dora hidden"></div>
+    </section>
+
+    <section class="history-section">
+      <div class="section-label">巡目记录</div>
+      <div id="history" class="history"></div>
+    </section>
+
+    <div id="waiting" class="waiting">
+      <div>等待牌局数据…</div>
+      <span>请开始一局游戏</span>
+    </div>
+
+    <footer>
+      <span>数据来自 mahjong-helper · MIT</span>
+      <span id="updated"></span>
+    </footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
